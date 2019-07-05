@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/gbogard/fp-ts-talk#readme",
   "dependencies": {
     "fp-ts": "^2.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3",
+    "typescript": "^3.5.2"
   }
 }

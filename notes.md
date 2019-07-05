@@ -4,8 +4,9 @@
 
 ### The promise of Typescript
 
-- Leverage the type system to model your business domain with confidence
+- Leverage the type system to model your
 - Catch errors at compile time to avoid surprises at runtime.
+- Refactor with confidence
 
 #### Where Typescript falls short
 
@@ -15,24 +16,34 @@
 
 ### The promise of functional programming
 
-- Make the code predictable at all times 
+- Make the code predictable at all times
   - Emphsizing pure functions
   - Encapsulating side effects
 - Reusing code through function composition and categories
 
 ### How can we benefit from statically typed FP ?
 
-#### The legacy of Haskell and ML
+Statically typed FP allows us to write more declarative code, focusing on the *what*
+rather than the *how*.
+
+The type allows us to purify function using algebraic data types rather than exceptions, and
+model truly total functions. Side effects are clearly identified through the use of IO monads.
+
+#### The legacy of Haskell and ML and the rise of functional Javascript
 
 #### The characteristics of a statically-typed, FP language
 
-## Composing pure functions
+- It has support for firt-class functions
+- It emphasizes on referentially transparent expressions
+- It has ways of handling effectful computations
 
-## Working with option values
+## The characteristics of a pure function
 
 ### Pure functions should be total
 
-### Interoperate with inpure code
+## Working with option values
+
+### Interoperate with impure code
 
 https://dev.to/gcanti/interoperability-with-non-functional-code-using-fp-ts-432e
 
@@ -43,6 +54,8 @@ https://dev.to/gcanti/interoperability-with-non-functional-code-using-fp-ts-432e
 ### Using Either
 
 ## Should I use Option or Either, the cheatsheet ?
+
+## Composing pure functions
 
 ### Conclusion : how does fp-ts fit in the initial definition ?
 
