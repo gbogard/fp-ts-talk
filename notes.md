@@ -4,8 +4,21 @@
 
 ### The promise of Typescript
 
+- Leverage the type system to model your business domain with confidence
+- Catch errors at compile time to avoid surprises at runtime.
+
+#### Where Typescript falls short
+
+- Working with impure code
+- Managing errors
+- Manipulating runtime data
 
 ### The promise of functional programming
+
+- Make the code predictable at all times 
+  - Emphsizing pure functions
+  - Encapsulating side effects
+- Reusing code through function composition and categories
 
 ### How can we benefit from statically typed FP ?
 
