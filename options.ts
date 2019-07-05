@@ -1,4 +1,6 @@
-import {map, chain, Option, none, some, getOrElse} from 'fp-ts/lib/Option'
+import {Option, map, chain, none, some, getOrElse, option} from 'fp-ts/lib/Option'
+import { array } from 'fp-ts/lib/Array'
+
 
 /**
  * Making a function pure by expanding the output
@@ -32,3 +34,11 @@ map(multiplyBy4)(optionB)  // => none
 chain((n: number) => divide(n, 10))(optionA) // => some(1.2)
 chain((n: number) => divide(n, 10))(optionB) // => none
 chain((n: number) => divide(n, 0))(optionA)  // => none
+
+/**
+ * Working with arrays of options
+ */
+
+const listOfOptions = [some("John"), some("Mary"), some("Greg")]
+
+array.sequence(option)(listOfOptions) // => some(["John", "Mary", "Greg"])
