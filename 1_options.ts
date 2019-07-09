@@ -1,4 +1,4 @@
-import {Option, map, chain, none, some, getOrElse, option} from 'fp-ts/lib/Option'
+import {Option, map, chain, none, some, getOrElse, option, fromNullable} from 'fp-ts/lib/Option'
 import { array } from 'fp-ts/lib/Array'
 
 
@@ -42,3 +42,9 @@ chain((n: number) => divide(n, 0))(optionA)  // => none
 const listOfOptions = [some("John"), some("Mary"), some("Greg")]
 
 array.sequence(option)(listOfOptions) // => some(["John", "Mary", "Greg"])
+
+/**
+ * Building Options from impure code
+ */
+
+fromNullable(['foo', 'bar', 'baz'][3]) // => none

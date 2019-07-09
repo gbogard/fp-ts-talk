@@ -4,7 +4,7 @@
 
 ### The promise of Typescript
 
-- Leverage the type system to model your
+- Leverage the type system to model your domain
 - Catch errors at compile time to avoid surprises at runtime.
 - Refactor with confidence
 
