@@ -46,3 +46,10 @@ export const unsafeAuthenticate = (username: string, password: string): User => 
 
 tryCatch(() => unsafeAuthenticate('jdoe', '1234'), reason => String(reason)) // => left('Error : Invalid Password')
 
+/*
+ * Either can help deserialize data at runtime, while handling all the errors
+ */
+const decodeUser = (user: any): Either<Error, User> => {
+  // Implement the validation logic here
+  return right(user as User)
+}

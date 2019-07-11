@@ -29,13 +29,15 @@ rather than the *how*.
 The type allows us to purify function using algebraic data types rather than exceptions, and
 model truly total functions. Side effects are clearly identified through the use of IO monads.
 
-#### The legacy of Haskell and ML and the rise of functional Javascript
+This idea, combining functional programming with a strong type system isn't new. It is the fundation of languages like Haskell and ML, and nowadays, it is
+gaining popularity in the javascript community through compiled languages like ReasonML, Scala.js, PureScript ...
 
 #### The characteristics of a statically-typed, FP language
 
 - It has support for firt-class functions
 - It emphasizes on referentially transparent expressions
 - It has ways of handling effectful computations
+- It has support for algrebaraic data types (discriminated unions, Either ...)
 
 ## The characteristics of a pure function
 

@@ -1,0 +1,61 @@
+Arguments: 
+  /home/guillaume/.nvm/versions/node/v11.15.0/bin/node /home/guillaume/.nvm/versions/node/v11.15.0/bin/yarn add 1_options
+
+PATH: 
+  /home/guillaume/.nvm/versions/node/v11.15.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/guillaume/Projects/fp-ts-talk/node_modules/.bin:/home/guillaume/.sdkman/candidates/sbt/current/bin:/home/guillaume/.sdkman/candidates/java/current/bin:/home/guillaume/.nvm/versions/node/v11.15.0/bin:/home/guillaume/.local/bin:/home/guillaume/.cargo/bin:/home/guillaume/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/guillaume/.dotnet/tools:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  11.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.npmjs.org/1_options: Not found
+      at Request.params.callback [as _callback] (/home/guillaume/.nvm/versions/node/v11.15.0/lib/node_modules/yarn/lib/cli.js:66091:18)
+      at Request.self.callback (/home/guillaume/.nvm/versions/node/v11.15.0/lib/node_modules/yarn/lib/cli.js:129590:22)
+      at Request.emit (events.js:193:13)
+      at Request.<anonymous> (/home/guillaume/.nvm/versions/node/v11.15.0/lib/node_modules/yarn/lib/cli.js:130562:10)
+      at Request.emit (events.js:193:13)
+      at IncomingMessage.<anonymous> (/home/guillaume/.nvm/versions/node/v11.15.0/lib/node_modules/yarn/lib/cli.js:130484:12)
+      at Object.onceWrapper (events.js:281:20)
+      at IncomingMessage.emit (events.js:198:15)
+      at endReadableNT (_stream_readable.js:1139:12)
+      at processTicksAndRejections (internal/process/task_queues.js:81:17)
+
+npm manifest: 
+  {
+    "name": "fp-ts-talk",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+      "start": "parcel index.html"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gbogard/fp-ts-talk.git"
+    },
+    "author": "Guillaume Bogard (https://guillaumebogard.dev)",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/gbogard/fp-ts-talk/issues"
+    },
+    "homepage": "https://github.com/gbogard/fp-ts-talk#readme",
+    "dependencies": {
+      "fp-ts": "^2.0.1"
+    },
+    "devDependencies": {
+      "parcel": "^1.12.3",
+      "typescript": "^3.5.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
